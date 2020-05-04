@@ -18,7 +18,7 @@ public class Main {
         int carta1Jugador = cartaRandom.GenerarCarta();
         int carta2Jugador = cartaRandom.GenerarCarta();
         int sumaJugador = carta1Jugador + carta2Jugador;
-
+ 
         System.out.println("Cartas del Dealer: ");
         System.out.println(carta1Dealer+","+carta2Dealer+ " ("+sumaDealer+")");
 
