@@ -8,8 +8,9 @@ public class CartasJugador {
     int carta2Jugador = cartaRandom.GenerarCarta();
     int sumaJugador = carta1Jugador + carta2Jugador;
 
-    public void getCartasJugador() {
+    public void getCartasJugador(int cartasPedidasJugador) {
 
+        
         System.out.println("Tus cartas:");
         System.out.println(carta1Jugador+","+carta2Jugador+ " ("+sumaJugador+")");
     }

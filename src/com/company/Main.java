@@ -12,8 +12,8 @@ public class Main {
         CartasJugador cartasJugador = new CartasJugador();
 
         //Mostrar Cartas
-        cartasDealer.getCartaDealer();
-        cartasJugador.getCartasJugador();
+        cartasDealer.getCartaDealer(2);
+        cartasJugador.getCartasJugador(2);
 
         System.out.println();
         System.out.println("Pedir= true | Parar = false");
@@ -21,9 +21,10 @@ public class Main {
         Boolean pedir = scanner.nextBoolean();
 
         while (pedir == true) {
-
-
             System.out.println("estas dentro del bucle");
+
+            cartasJugador.getCartasJugador(3);
+
             pedir = scanner.nextBoolean();
         }
 
