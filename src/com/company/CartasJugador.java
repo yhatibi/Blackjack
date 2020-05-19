@@ -3,15 +3,22 @@ package com.company;
 public class CartasJugador {
 
     CartaRandom cartaRandom = new CartaRandom();
+    int cartasPedidasJugador = 2;
+    int cartaJugador []  = new int[cartasPedidasJugador];
 
-    int carta1Jugador = cartaRandom.GenerarCarta();
-    int carta2Jugador = cartaRandom.GenerarCarta();
-    int sumaJugador = carta1Jugador + carta2Jugador;
+    public void generarCartas() {
 
-    public void getCartasJugador(int cartasPedidasJugador) {
+        for (int i = 0; i < cartasPedidasJugador ; i++) {
+            cartaJugador[i] = cartaRandom.GenerarCarta();
+        }
+    }
 
-        
-        System.out.println("Tus cartas:");
-        System.out.println(carta1Jugador+","+carta2Jugador+ " ("+sumaJugador+")");
+    public void imprimirCartas() {
+        System.out.println();
+        System.out.println("Tus Cartas: ");
+
+        for (int i = 0; i < cartasPedidasJugador ; i++) {
+            System.out.print(cartaJugador[i]+" | ");
+        }
     }
 }
