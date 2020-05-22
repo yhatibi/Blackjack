@@ -13,6 +13,7 @@ public class Main {
         CartasJugador cartasJugador = new CartasJugador();
         SumaCartas sumaCartas = new SumaCartas();
         CartaRandom cartaRandom = new CartaRandom();
+        //PedirCarta pedirCarta = new PedirCarta();
 
 
         //Mostrar Cartas Dealer
@@ -27,6 +28,8 @@ public class Main {
         //Suma de cartas del Jugador
         sumaCartas.getSumaCartasJugador(cartasJugador.cartaJugador.length, cartasJugador.cartaJugador);
 
+
+        //pedirCarta.getPedirCarta();
 
         //Mensage Pedir o parar
         System.out.println();
